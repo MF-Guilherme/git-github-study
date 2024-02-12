@@ -1,0 +1,5 @@
+# Usar o * para TODOS OS ARQUIVOS com aquela extensão
+*.sqlite3
+
+# Usar o ** para ignorar todos os diretórios e subdiretórios que contiverem aquele nome, inclusive os arquivos dentro dele
+**fotos
