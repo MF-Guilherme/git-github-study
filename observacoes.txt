@@ -11,3 +11,7 @@ Caso esteja utilizando um computador particular, pode-se utilizar a configuraç�
     > git config --global user.email "<email>"
 
 Essas configurações ficam salvas no arquivo "config" dentro da pasta .git (oculta)
+
+
+Para fazer com que o arquivo específico volte ao ponto em que estava no ultimo commit:
+git restore <nome do arquivo> 
