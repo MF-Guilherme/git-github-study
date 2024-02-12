@@ -1,0 +1,13 @@
+Toda vez que criar um projeto, configurar nome e e-mail para identificação.
+    > git config user.name "<nome que preferir para te identificar>"
+    > git config user.email "<email>"
+
+Essas configurações podem ser 'somente locais' ou 'globais'
+
+Caso esteja utilizando um computador compartilhado, o ideal é utilizar a configuração somente local.
+
+Caso esteja utilizando um computador particular, pode-se utilizar a configuração GLOBAL:
+    > git config --global user.name "<nome que preferir para te identificar>"
+    > git config --global user.email "<email>"
+
+Essas configurações ficam salvas no arquivo "config" dentro da pasta .git (oculta)
