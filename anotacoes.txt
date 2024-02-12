@@ -51,3 +51,14 @@ ex: git checkout 0d2f914
 
 para voltar par ao último commit:
 git checkout main
+
+
+
+# COMANDOS UTEIS
+
+Para RENOMEAR arquivos sem a necessidade de fazer um novo add:
+
+git mv <nome do arquivo> <novo nome do arquivo>
+
+Se eu renomear o arquivo direto no projeto, eu preciso colocar esse arquivo em staged antes de comitar.
+Quando eu utilizo o git mv eu posso comitar direto
