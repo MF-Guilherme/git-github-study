@@ -15,3 +15,11 @@ Essas configurações ficam salvas no arquivo "config" dentro da pasta .git (ocu
 
 Para fazer com que o arquivo específico volte ao ponto em que estava no ultimo commit:
 git restore <nome do arquivo> 
+
+GIT LOG NÃO MOSTRA COMPLETO E TRAVA:
+
+Quando o tamanho do terminal não cabe todos os logs, ele traz os últimos comits e para na tela ":"
+nesta tela eu posso digitar '/' e escrever uma palavra de busca, ou apertar 'q' para sair desta tela.
+
+Para mudar esse comportamento, posso utilizar o comando: git config core.pager cat
+para voltar ao comportamento anterior: git config core.pager less
