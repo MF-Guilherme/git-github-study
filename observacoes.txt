@@ -43,3 +43,11 @@ git log --since="2 days ago"
 git log --after="1 week ago"
 git log --author="Nome ou parte do nome do autor"
 git help log (para ver todas as opções de log)
+
+# VOLTANDO NO TEMPO ATÉ UM COMMIT ESPECÍFICO (git checkout)
+
+git checkout <hash id do commit para onde quer voltar>
+ex: git checkout 0d2f914
+
+para voltar par ao último commit:
+git checkout main
