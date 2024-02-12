@@ -1,0 +1,70 @@
+Toda vez que criar um projeto, configurar nome e e-mail para identificação.
+    > git config user.name "<nome que preferir para te identificar>"
+    > git config user.email "<email>"
+
+Essas configurações podem ser 'somente locais' ou 'globais'
+
+Caso esteja utilizando um computador compartilhado, o ideal é utilizar a configuração somente local.
+
+Caso esteja utilizando um computador particular, pode-se utilizar a configuração GLOBAL:
+    > git config --global user.name "<nome que preferir para te identificar>"
+    > git config --global user.email "<email>"
+
+Essas configurações ficam salvas no arquivo "config" dentro da pasta .git (oculta)
+
+
+Para fazer com que o arquivo específico volte ao ponto em que estava no ultimo commit:
+git restore <nome do arquivo> 
+
+
+# GIT LOG
+
+Posso escolher quantos logs eu quero mostrar:
+git log -1 (mostra somente o último commit)
+git log -2 (mostra os 2 últimos commits e assim por diante)
+
+Da mesma forma posso utilizar o --oneline para ver somente com a hash:
+git log --oneline -1 (mostra somente o último commit)
+git log --oneline -2 (mostra os 2 últimos commits e assim por diante)
+
+- GIT LOG NÃO MOSTRA COMPLETO E TRAVA NOS DOIS PONTOS ":"
+
+Quando o tamanho do terminal não cabe todos os logs, ele traz os últimos comits e para na tela ":"
+nesta tela eu posso digitar '/' e escrever uma palavra de busca, ou apertar 'q' para sair desta tela.
+
+Para mudar esse comportamento, posso utilizar o comando: git config core.pager cat
+para voltar ao comportamento anterior: git config core.pager less
+
+- Para pesquisar por data (TODOS PODEM UTILIZAR AS VARIAVEIS "--oneline", "-2"):
+
+git log --before="2024-02-15" # todos os commits realizados antes de 15/02/2024
+git log --after="2024-02-10" # todos os commits realizados depois de 10/02/2024
+git log --since="2 days ago"
+git log --after="1 week ago"
+git log --author="Nome ou parte do nome do autor"
+git help log (para ver todas as opções de log)
+
+# VOLTANDO NO TEMPO ATÉ UM COMMIT ESPECÍFICO (git checkout)
+
+git checkout <hash id do commit para onde quer voltar>
+ex: git checkout 0d2f914
+
+para voltar par ao último commit:
+git checkout main
+
+
+
+# COMANDOS UTEIS
+
+- Para RENOMEAR arquivos/diretórios com o git:
+
+    > git mv <nome do arquivo/diretorio> <novo nome do arquivo/diretorio>
+
+* Quando eu utilizo o git mv ele renomeia e já coloca em staged e eu posso comitar direto.
+Se eu renomear o arquivo/diretorio direto no projeto, eu preciso colocar esse arquivo/diretorio em staged antes de comitar.
+
+- Para REMOVER/DELETAR arquivos/diretórios com o git:
+    > git rm <nome do arquivo/diretorio>
+
+* Quando eu utilizo o git rm ele deleta e já coloca em staged e eu posso comitar direto.
+Se eu deletar o arquivo/diretorio direto no projeto, eu preciso colocar esse arquivo/diretorio em staged antes de comitar.
