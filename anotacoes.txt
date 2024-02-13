@@ -56,9 +56,19 @@ git checkout main
 
 # COMANDOS UTEIS
 
-Para RENOMEAR arquivos sem a necessidade de fazer um novo add:
+- Para RENOMEAR arquivos/diretórios com o git:
 
-git mv <nome do arquivo> <novo nome do arquivo>
+    > git mv <nome do arquivo/diretorio> <novo nome do arquivo/diretorio>
 
-Se eu renomear o arquivo direto no projeto, eu preciso colocar esse arquivo em staged antes de comitar.
-Quando eu utilizo o git mv eu posso comitar direto
+* Quando eu utilizo o git mv ele renomeia e já coloca em staged e eu posso comitar direto.
+Se eu renomear o arquivo/diretorio direto no projeto, eu preciso colocar esse arquivo/diretorio em staged antes de comitar.
+
+- Para REMOVER/DELETAR arquivos/diretórios com o git:
+    > git rm <nome do arquivo/diretorio>
+
+* Quando eu utilizo o git rm ele deleta e já coloca em staged e eu posso comitar direto.
+Se eu deletar o arquivo/diretorio direto no projeto, eu preciso colocar esse arquivo/diretorio em staged antes de comitar.
+
+- Para verificar a DIFERENÇA entre o último commit realizado e o arquivo que eu acabei de colocar no staged, antes de comitar:
+
+    > git diff --staged
